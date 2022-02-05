@@ -9,15 +9,17 @@
 }
 
 .team__title {
-  // margin-bottom: 50px;
-  // font-size: 36px;
-  // line-height: 1.16;
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-text-color);
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team__list {
@@ -38,14 +40,14 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: 768px) {
-    width: calc(100% / 2 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
   }
   @media screen and (min-width: 1200px) {
-    width: calc(100% / 4 - 30px);
+    flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
     margin-bottom: 0;
   }
