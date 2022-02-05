@@ -1,12 +1,37 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__item {
+  margin-bottom: 15px;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio__item:not(:last-child) {
