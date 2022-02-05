@@ -646,7 +646,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .team__item {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
     margin-bottom: 0;
   }
