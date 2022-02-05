@@ -217,7 +217,7 @@ body {
   border-color: #2196f3;
 }
 
-.field__input:focus + .form-icon {
+.field__input:focus + .field__icon {
   fill: #2196f3;
 }
 
@@ -452,16 +452,49 @@ body {
 }
 
 .goals {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.goals__list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .goals {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.goals__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .goals__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+.goals__item {
+  margin-bottom: 30px;
+}
+
+.goals__item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .goals__item {
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+  .goals__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .goals__item {
+    width: calc(100% / 4 - 30px);
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .goals__item::before {
@@ -498,11 +531,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--header-text-color);
 }
 
 .goals__text {
-  width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

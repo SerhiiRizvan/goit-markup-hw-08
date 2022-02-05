@@ -101,7 +101,7 @@
   &:focus {
     border-color: #2196f3;
   }
-  &:focus + .form-icon {
+  &:focus + .field__icon {
     fill: #2196f3;
   }
 }
