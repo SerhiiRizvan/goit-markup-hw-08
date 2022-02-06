@@ -829,7 +829,7 @@ body {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-address__box {
     margin-bottom: 0;
   }
