@@ -63,7 +63,15 @@
   display: none;
 }
 
-.menu__button.is-open .site-nav {
+.menu__button.is-open .icon__cross {
+  display: block;
+}
+
+.menu__button.is-open .icon__menu {
+  display: none;
+}
+
+.site-nav {
   @media screen and (max-width: 767px) {
     display: none;
   }
