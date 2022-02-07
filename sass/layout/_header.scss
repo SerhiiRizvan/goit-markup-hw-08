@@ -3,20 +3,32 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .header__link {
-  // margin-right: 90px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
   @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.16;
     margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 90px;
   }
 }
 
@@ -30,14 +42,21 @@
 }
 
 .site-nav {
-  margin-right: 84px;
+  @media screen and (min-width: 768px) {
+    // margin-left: auto;
+  }
   @media screen and (min-width: 1200px) {
-    margin-left: auto;
+    // margin-left: auto;
   }
 }
 
 .site-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .site-list__item:not(:last-child) {
@@ -84,14 +103,35 @@
 
 .contacts {
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    // margin-left: auto;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    // margin-left: auto;
+    margin-left: auto;
+  }
+}
+
+.contacts__list {
+}
+
+.contacts__list--bottom {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__list--left {
+  // margin-left: 50px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    // align-items: center;
   }
 }
 
@@ -112,8 +152,8 @@
   }
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -124,14 +164,4 @@
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.contacts__list--left {
-  // margin-left: 50px;
-  @media screen and (min-width: 768px) {
-    margin-left: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 50px;
-  }
 }

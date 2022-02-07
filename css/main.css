@@ -92,7 +92,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: #ffffff;
@@ -327,23 +326,35 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__link {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
   .header__link {
+    font-size: 24px;
+    line-height: 1.16;
     margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__link {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 90px;
   }
 }
 
@@ -356,18 +367,16 @@ body {
   color: var(--header-text-color);
 }
 
-.site-nav {
-  margin-right: 84px;
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-left: auto;
+@media screen and (min-width: 768px) {
+  .site-list {
+    display: flex;
   }
 }
 
-.site-list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .site-list {
+    display: flex;
+  }
 }
 
 .site-list__item:not(:last-child) {
@@ -415,8 +424,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .contacts {
-    display: flex;
-    flex-direction: column;
+    margin-left: auto;
   }
 }
 
@@ -424,6 +432,31 @@ body {
   .contacts {
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list--bottom {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list--bottom {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__list--left {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list--left {
+    margin-left: 30px;
   }
 }
 
@@ -445,8 +478,8 @@ body {
 @media screen and (min-width: 768px) {
   .contacts__link {
     justify-content: flex-start;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 
@@ -460,18 +493,6 @@ body {
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__list--left {
-    margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts__list--left {
-    margin-left: 50px;
-  }
 }
 
 .hero {
