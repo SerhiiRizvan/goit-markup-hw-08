@@ -19,9 +19,15 @@
     <header class="header">
         <div class="container header__container">
             <a href="" lang="en" class="link header__link">Web<span class="header-span">Studio</span></a>
+            <button class="menu__button" type="button is-open">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon__cross" href="./images/icons.svg#icon-close_icon"></use>
+                    <use class="icon__burger" href="./images/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
             <nav class="site-nav">
                 <ul class="list site-list">
-                    <li class="site-list__item"><a class="link site-list__link--current" href="./index.html">Студия</a></li>
+                    <li class="site-list__item"><a class="link site-list__link site-list__link--current" href="./index.html">Студия</a></li>
                     <li class="site-list__item"><a class="link site-list__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="site-list__item"><a class="link site-list__link" href="">Контакты</a></li>
                 </ul>
@@ -78,7 +84,7 @@
             </div>
         </section>
                             <!-- Деятельность -->
-        <!-- <section class="activity">
+        <section class="activity">
             <div class="container">
                 <h2 class="activity__title">Чем мы занимаемся</h2>
                     <ul class="list activity__list">
@@ -102,7 +108,7 @@
                         </li>
                     </ul>
             </div>
-        </section> -->
+        </section>
                                 <!-- Команда -->
         <section class="team">
             <div class="container">

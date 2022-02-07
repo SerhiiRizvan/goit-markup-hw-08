@@ -1,6 +1,9 @@
 .activity {
   padding-top: 0;
   padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .activity__title {
