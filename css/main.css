@@ -387,7 +387,7 @@ body {
   }
 }
 
-.menu__button {
+.menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -396,20 +396,20 @@ body {
 }
 
 @media screen and (min-width: 767px) {
-  .menu__button {
+  .menu-button {
     display: none;
   }
 }
 
-.menu__button .icon__cross {
+.menu-button .icon-cross {
   display: none;
 }
 
-.menu__button.is-open .icon__cross {
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu__button.is-open .icon__menu {
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
