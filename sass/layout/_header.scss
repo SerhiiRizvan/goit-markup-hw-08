@@ -192,6 +192,7 @@
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition: left 250ms, visibility 250ms;
   .container {
     height: 100%;
     display: flex;
@@ -202,6 +203,8 @@
 }
 
 .mob-menu.is-hidden {
+  // transform: translate(100%);
+  left: 100%;
 }
 
 .menu-button-close {
@@ -274,4 +277,10 @@
 
 .menu-social {
   display: flex;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

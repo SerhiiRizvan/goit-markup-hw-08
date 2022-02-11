@@ -66,6 +66,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  border: 1px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
@@ -116,7 +117,7 @@ body {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: scale(0.5);
 }
 
 .modal {
@@ -126,10 +127,9 @@ body {
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  position: relative;
+  margin: 93px auto;
+  transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -139,9 +139,16 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    margin: 208px auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    margin: 221px auto;
   }
 }
 
@@ -552,6 +559,7 @@ body {
   padding-bottom: 48px;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  transition: left 250ms, visibility 250ms;
 }
 
 .mob-menu .container {
@@ -560,6 +568,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding-left: 40px;
+}
+
+.mob-menu.is-hidden {
+  left: 100%;
 }
 
 .menu-button-close {
@@ -633,6 +645,12 @@ body {
 
 .menu-social {
   display: flex;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .hero {
