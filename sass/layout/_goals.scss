@@ -16,9 +16,8 @@
 }
 
 .goals__item {
-  margin-bottom: 30px;
-  &:last-child {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
@@ -68,8 +67,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
   color: var(--header-text-color);
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .goals__text {

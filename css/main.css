@@ -66,7 +66,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 1px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
@@ -570,6 +569,12 @@ body {
   padding-left: 40px;
 }
 
+@media screen and (min-width: 767px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu.is-hidden {
   left: 100%;
 }
@@ -734,12 +739,8 @@ body {
   }
 }
 
-.goals__item {
+.goals__item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.goals__item:last-child {
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -794,8 +795,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
   color: var(--header-text-color);
+}
+
+@media screen and (max-width: 767px) {
+  .goals__heading {
+    text-align: center;
+  }
 }
 
 .goals__text {
@@ -1332,7 +1338,7 @@ body {
 @media screen and (min-width: 768px) {
   .portfolio {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 }
 
